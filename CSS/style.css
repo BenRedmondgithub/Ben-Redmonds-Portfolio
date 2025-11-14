@@ -1,0 +1,44 @@
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      #vanta-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(135deg, #131863, #6745ff);
+      }
+      
+      .launch-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 500px;
+        z-index: 10;
+      }
+      
+      .btn-launch {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .hero {
+        background-image: linear-gradient(rgba(17, 255, 223, 0.6), rgba(136, 55, 212, 0.6)), url('/img/Coding Thumbnail.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        color: white;
+      }
