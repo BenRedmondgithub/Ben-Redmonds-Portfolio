@@ -76,7 +76,6 @@
     </style>
   </head>
   <body>
-    <div id="vanta-bg"></div>
     <div class="launch-box">
       <div class="card bg-transparent border-light">
         <div class="card-header bg-transparent border-light text-center">
@@ -86,7 +85,7 @@
           <div class="d-grid gap-2">
             <a href="/IT/index.html" class="btn btn-primary btn-launch">IT Support</a>
             <a href="/WebDev/index.html" class="btn btn-light btn-launch text-dark">Web Development</a>
-            <a href="#" class="btn btn-success btn-launch text-dark">Photography</a>
+            <a href="#" class="btn btn-success btn-launch text-light">Photography</a>
           </div>
         </div>
         <h2 class="text-light text-center mt-4">About Me</h2>
@@ -116,26 +115,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="vanta.halo.min.js"></script>
-    <script>
-    // Error handling for Vanta.js
-    if (typeof VANTA !== 'undefined') {
-      VANTA.HALO({
-        el: "#vanta-bg",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        baseColor: 0x6745ff,
-        backgroundColor: 0x131863,
-        amplitudeFactor: 1.0,
-        size: 1.0
-      });
-    } else {
-      console.log('Vanta.js not loaded, using fallback background');
-    }
-    </script>
   </body>
 </html>
