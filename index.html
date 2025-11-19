@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ben Redmond | Portfolio</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+      }
+      
+      #vanta-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(135deg, #131863, #6745ff);
+      }
+      
+      .launch-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 600px;
+        z-index: 10;
+      }
+      
+      .card {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.1) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        height: auto;
+        width: auto;
+      }
+      
+      .card-header, .card-footer {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.05) !important;
+        border-color: rgba(255, 255, 255, 0.1) !important;
+      }
+      
+      .btn-launch {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+      }
+      
+      .btn-launch:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .profile {
+        border-radius: 50%;
+        border: 4px solid rgba(19, 187, 209, 0.541);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="vanta-bg"></div>
+    <div class="launch-box">
+      <div class="card bg-transparent border-light">
+        <div class="card-header bg-transparent border-light text-center">
+          <h1 class="card-title text-light mb-0">Welcome to Ben Redmond's Portfolio</h1>
+        </div>
+        <div class="card-body text-center">
+          <div class="d-grid gap-2">
+            <a href="/IT/index.html" class="btn btn-primary btn-launch">IT Support</a>
+            <a href="/WebDev/index.html" class="btn btn-light btn-launch text-dark">Web Development</a>
+            <a href="#" class="btn btn-success btn-launch text-dark">Photography</a>
+          </div>
+        </div>
+        <h2 class="text-light text-center mt-4">About Me</h2>
+        <p class="text-light text-center mx-auto" style="max-width: 600px;">
+        This is a test for the pipeline deployment process.  
+        <br>
+        <br>
+        I'm passionate about building things that make people feel something, whether thats a clean, functional website or a piece of art that sparks a conversation.
+        <br>
+        <br>
+        I'm exploring how tech, storytelling, and education overlap and building projects that sit right at that intersection.
+        </p>
+        <img class="profile" src="/img/profile.jpg" alt="Ben Redmond Profile Picture" class="rounded-circle" style="width: 300px; height: 300px; object-fit: cover; margin: 20px auto; display: block;">
+        <div class="card-footer bg-transparent border-light text-center">
+          <!-- Github -->
+          <a href="https://github.com/BenRedmondgithub" target="_blank" class="text-decoration-none text-light">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/benredmond100/" target="_blank" class="text-decoration-none text-light ms-3">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="vanta.halo.min.js"></script>
+    <script>
+    // Error handling for Vanta.js
+    if (typeof VANTA !== 'undefined') {
+      VANTA.HALO({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        baseColor: 0x6745ff,
+        backgroundColor: 0x131863,
+        amplitudeFactor: 1.0,
+        size: 1.0
+      });
+    } else {
+      console.log('Vanta.js not loaded, using fallback background');
+    }
+    </script>
+  </body>
+</html>
