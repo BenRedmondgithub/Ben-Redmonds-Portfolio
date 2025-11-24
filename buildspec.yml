@@ -1,9 +1,9 @@
 version: 0.2
+
 phases:
-  install:
+  build:
     commands:
-      - echo "Running HTML smoke Test..."
+      - echo "Running HTML smoke test..."
       - ls
-      - test -f index.html
-      - echo "HTML smoke test passed: index.html exists."
-      
+      - test -f main-index.html
+      - echo "HTML smoke test passed."
