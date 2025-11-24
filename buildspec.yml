@@ -5,5 +5,5 @@ phases:
     commands:
       - echo "Running HTML smoke test..."
       - ls
-      - test -f main-index.html
+      - test -f index.html
       - echo "HTML smoke test passed."
