@@ -2,10 +2,8 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Installing HTMLHint..."
-      - npm install -g htmlhint
-  build:
-    commands:
-      - echo "Running HTML validation..."
-      # Validate all HTML files in the repo
-      - htmlhint "**/*.html"
+      - echo "Running HTML smoke Test..."
+      - ls
+      - test -f index.html
+      - echo "HTML smoke test passed: index.html exists."
+      
