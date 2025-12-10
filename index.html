@@ -67,11 +67,11 @@
         font-weight: 250;
       }
 
-      .card bg-transparent border-light {
-        font-size: 1.2rem;
-        font-weight: 300;
-        height: 200px;
-      } 
+      .card.bg-transparent.border-light {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
       
       .btn-launch:hover {
         transform: translateY(-2px);
@@ -80,51 +80,71 @@
 
       .profile {
         border-radius: 50%;
-        border: 4px solid rgba(30, 255, 0, 0.541);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      border: 4px solid rgba(30, 255, 0, 0.541);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      width: 200px;              /* smaller circle */
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      margin: 20px auto;
       }
 
-      .text-light text-center mx-auto {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-      }
+      .about-text {
+      max-width: 400px;
+      margin: 0 auto 10px auto;
+      line-height: 1.6;
+      font-size: 1.1rem;
+  }
 
     </style>
   </head>
   <body>
-    <div id="vanta-bg"></div>
-    <div class="launch-box">
-      <div class="card bg-transparent border-light">
-        <div class="card-header bg-transparent border-light text-center">
-          <h1 class="card-title text-light mb-0"> Welcome to Ben Redmond's Portfolio</h1>
-        </div>
-        <div class="card-body text-center">
-          <div class="d-grid gap-2">
-            <a href="/IT/index.html" class="btn btn-primary btn-launch">IT Support</a>
-            <a href="/WebDev/index.html" class="btn btn-light btn-launch text-dark">Web Development</a>
-            <a href="#" class="btn btn-success btn-launch text-dark">Photography</a>
-          </div>
-        </div>
-        <h1 class="text-light text-center mt-4">About Me</h1>
-        <p class="text-light text-center mx-auto" style="max-width: 400px;">
-        Hey my name is Ben Redmond, I am a multifaceted creator with a passion for technology, storytelling, and education.
-        I'm passionate about building things that make people feel something, whether thats a clean, functional website or a piece of art that sparks a conversation.
-        I'm exploring how tech, storytelling, and education overlap and building projects that sit right at that intersection.
-        </p>
-        <img class="profile" src="/img/profile.jpg" alt="Ben Redmond Profile Picture" class="rounded-circle" style="width: 300px; height: 300px; object-fit: cover; margin: 20px auto; display: block;">
-        <div class="card-footer bg-transparent border-light text-center">
-          <!-- Github -->
-          <a href="https://github.com/BenRedmondgithub" target="_blank" class="text-decoration-none text-light">
-            <i class="fab fa-github fa-2x"></i>
-          </a>
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/benredmond100/" target="_blank" class="text-decoration-none text-light ms-3">
-            <i class="fab fa-linkedin fa-2x"></i>
-          </a>
+    <body>
+  <div id="vanta-bg"></div>
+
+  <div class="launch-box">
+    <div class="card bg-transparent border-light">
+      <div class="card-header bg-transparent border-light text-center">
+        <h1 class="card-title text-light mb-0">
+          Welcome to Ben Redmond's Portfolio
+        </h1>
+      </div>
+
+      <div class="card-body text-center">
+        <div class="d-grid gap-2">
+          <a href="/IT/index.html" class="btn btn-primary btn-launch">IT Support</a>
+          <a href="/WebDev/index.html" class="btn btn-light btn-launch text-dark">Web Development</a>
+          <a href="#" class="btn btn-success btn-launch text-dark">Photography</a>
         </div>
       </div>
+
+      <div class="card-footer bg-transparent border-light text-center">
+        <a href="https://github.com/BenRedmondgithub" target="_blank" class="text-decoration-none text-light">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/benredmond100/" target="_blank" class="text-decoration-none text-light ms-3">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+      </div>
     </div>
+
+    <!-- ABOUT SECTION: outside the card -->
+    <h1 class="text-light text-center mt-4">About Me</h1>
+    <p class="text-light text-center mx-auto about-text">
+      Hey my name is Ben Redmond, I am a multifaceted creator with a passion for technology, storytelling, and education.
+      I'm passionate about building things that make people feel something, whether thats a clean, functional website
+      or a piece of art that sparks a conversation. I'm exploring how tech, storytelling, and education overlap and
+      building projects that sit right at that intersection.
+    </p>
+
+    <img
+      class="profile"
+      src="/img/profile.jpg"
+      alt="Ben Redmond Profile Picture"
+    />
+  </div>
+</body>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
